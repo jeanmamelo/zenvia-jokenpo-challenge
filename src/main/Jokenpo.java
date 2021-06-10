@@ -16,7 +16,7 @@ public class Jokenpo {
             System.out.println("Player " + i + " - Choose a number to describe your move:");
             System.out.println("0 - Rock");
             System.out.println("1 - Paper");
-            System.out.println("2 - Scissor");
+            System.out.println("2 - Scissors");
 
             try {
                 playerMove = scan.nextInt();

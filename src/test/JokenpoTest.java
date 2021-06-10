@@ -28,8 +28,8 @@ public class JokenpoTest {
     }
 
     @Test
-    public void shouldPlayerOneWinWithScissor() {
-        givenPlayerOneChooseScissor();
+    public void shouldPlayerOneWinWithScissors() {
+        givenPlayerOneChooseScissors();
         givenPlayerTwoChoosePaper();
         whenCallCheckGameResult();
         thenExpectStringPlayerOneWins();
@@ -38,7 +38,7 @@ public class JokenpoTest {
     @Test
     public void shouldPlayerTwoWinWithRock() {
         givenPlayerTwoChooseRock();
-        givenPlayerOneChooseScissor();
+        givenPlayerOneChooseScissors();
         whenCallCheckGameResult();
         thenExpectStringPlayerTwoWins();
     }
@@ -52,7 +52,7 @@ public class JokenpoTest {
     }
 
     @Test
-    public void shouldPlayerTwoWinWithScissor() {
+    public void shouldPlayerTwoWinWithScissors() {
         givenPlayerTwoChooseScissors();
         givenPlayerOneChoosePaper();
         whenCallCheckGameResult();
@@ -76,8 +76,8 @@ public class JokenpoTest {
     }
 
     @Test
-    public void shouldPlayerOneTieWithScissor() {
-        givenPlayerOneChooseScissor();
+    public void shouldPlayerOneTieWithScissors() {
+        givenPlayerOneChooseScissors();
         givenPlayerTwoChooseScissors();
         whenCallCheckGameResult();
         thenExpectStringATie();
@@ -100,9 +100,9 @@ public class JokenpoTest {
     }
 
     @Test
-    public void shouldPlayerTwoTieWithScissor() {
+    public void shouldPlayerTwoTieWithScissors() {
         givenPlayerTwoChooseScissors();
-        givenPlayerOneChooseScissor();
+        givenPlayerOneChooseScissors();
         whenCallCheckGameResult();
         thenExpectStringATie();
     }
@@ -118,7 +118,7 @@ public class JokenpoTest {
         playerOneChoose = 1;
     }
 
-    private void givenPlayerOneChooseScissor() {
+    private void givenPlayerOneChooseScissors() {
         playerOneChoose = 2;
     }
 
