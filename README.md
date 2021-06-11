@@ -6,16 +6,25 @@
 
 ### Follow the instructions to get a copy of the project up and running using the command line.
 
-- Clone the project.
-> `git clone https://github.com/jeanmamelo/zenvia-jokenpo-challenge.git`
-- Open the project folder.
-> `cd zenvia-jokenpo-challenge`
-- Go to src/main.
-> `cd src/main`
-- Now compile the java files.
-> `javac -d . Jokenpo.java Player.java`
-- Then run the project.
-> `java main/Jokenpo`
+- Clone the project:
+
+ ```git clone https://github.com/jeanmamelo/zenvia-jokenpo-challenge.git```
+
+- Open the project folder:
+
+ ```cd zenvia-jokenpo-challenge```
+
+- Go to src/main:
+
+```cd src/main```
+
+- Now compile the java files:
+
+ ```javac -d . Jokenpo.java Player.java```
+
+- Then run the project:
+
+ ```java main/Jokenpo```
 
 ### Follow the instructions to get a copy of the project up and running using IntelliJ IDE.
 
