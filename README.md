@@ -46,4 +46,4 @@ cd src/main
 ### If you want to run the unit tests
 - Add JUnit 5.4.2 to your classpath.
 - Go to src/test.
-- Run the JokenpoTest class inside JokenpoTest.java to execute the unit tests.
+- Run the JokenpoTest class inside JokenpoTest.java.
