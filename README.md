@@ -39,10 +39,11 @@ cd src/main
 ### Follow the instructions to get a copy of the project up and running using IntelliJ IDE.
 
 - Clone or download the project.
-- Import the project in IntelliJ IDE.
+- Open the project in IntelliJ IDE.
 - Go to src/main.
 - Then run the main method inside Jokenpo.java.
 
 ### If you want to run the unit tests
 - Add JUnit 5.4.2 to your classpath.
+- Go to src/test.
 - Run the JokenpoTest class inside JokenpoTest.java to execute the unit tests.
