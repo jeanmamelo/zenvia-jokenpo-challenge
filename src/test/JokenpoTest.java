@@ -1,15 +1,16 @@
 package test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import main.Jokenpo;
 import org.testng.annotations.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class JokenpoTest {
 
     private int playerOneChoose;
     private int playerTwoChoose;
     private String result;
+    private String invalidInput;
 
     @Test
     public void shouldPlayerOneWinWithRock() {
@@ -106,6 +107,13 @@ public class JokenpoTest {
         whenCallCheckGameResult();
         thenExpectStringATie();
     }
+    
+    @Test
+    public void shouldNotRunDueToInvalidInput() {
+        givenInvalidInput();
+        whenCallJokenpoClass();
+        thenExpectNothing();
+    }
 
     /**
      * Given methods
@@ -134,11 +142,19 @@ public class JokenpoTest {
         playerTwoChoose = 2;
     }
 
+    private void givenInvalidInput() {
+        invalidInput = "a";
+    }
+
     /**
      * When methods
      */
     private void whenCallCheckGameResult() {
         result = Jokenpo.checkGameResult(playerOneChoose, playerTwoChoose);
+    }
+
+    private void whenCallJokenpoClass() {
+        new Jokenpo();
     }
 
     /**
@@ -154,5 +170,9 @@ public class JokenpoTest {
 
     private void thenExpectStringATie() {
         assertEquals("A tie.", result);
+    }
+
+    private void thenExpectNothing() {
+        // Expect nothing
     }
 }

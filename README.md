@@ -4,8 +4,26 @@
 
 ## Getting Started
 
-Follow the instructions to get a copy of the project up and running in your local machine.
+### Follow the instructions to get a copy of the project up and running using the command line.
 
-- Clone or Download the Project
-- Run the main method inside Jokenpo.java to be able to play the game.
-- Run the JokenpoTest.java class inside JokenpoTest.java to execute the unit tests.
+- Clone the project.
+`git clone https://github.com/jeanmamelo/zenvia-jokenpo-challenge.git`
+- Go to the project.
+`cd zenvia-jokenpo-challenge`
+- Go to src/main.
+`cd src/main`
+- Now compile the java files.
+`javac -d . Jokenpo.java Player.java`
+- Then run the project.
+`java main/Jokenpo`
+
+### Follow the instructions to get a copy of the project up and running using IntelliJ IDE.
+
+- Clone or download the project.
+- Import the project in IntelliJ IDE.
+- Go to src/main.
+- Then run the main method inside Jokenpo.java.
+
+### If you want to run the unit tests
+- Add JUnit 5.4.2 to your classpath.
+- Run the JokenpoTest class inside JokenpoTest.java to execute the unit tests.
