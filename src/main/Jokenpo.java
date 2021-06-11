@@ -14,20 +14,18 @@ public class Jokenpo {
 
         for (int i = 1; i <= 2; i++) {
             System.out.println("Player " + i + " - Choose a number to describe your move:");
-            System.out.println("0 - Rock");
-            System.out.println("1 - Paper");
-            System.out.println("2 - Scissors");
+            System.out.println(validMoves());
 
             try {
                 playerMove = scan.nextInt();
+                while (playerMove < 0 || playerMove > 2) {
+                    System.out.println("Not a valid move. Please choose a valid one (0-2):");
+                    System.out.println(validMoves());
+                    playerMove = scan.nextInt();
+                }
             } catch(Exception e) {
                 System.out.println("Sorry, only numbers allowed.");
                 return;
-            }
-
-            while (playerMove < 0 || playerMove > 2) {
-                System.out.println("Choose a valid move (0-2):");
-                playerMove = scan.nextInt();
             }
 
             if (i == 1) {
@@ -39,6 +37,10 @@ public class Jokenpo {
 
         String gameResult = checkGameResult(playerOne.getMove(), playerTwo.getMove());
         System.out.println(gameResult);
+    }
+
+    private static String validMoves() {
+        return "0 - Rock\n1 - Paper\n2 - Scissors";
     }
 
     public static String checkGameResult(int playerOneMove, int playerTwoMove) {
