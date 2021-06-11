@@ -8,23 +8,33 @@
 
 - Clone the project:
 
- ```git clone https://github.com/jeanmamelo/zenvia-jokenpo-challenge.git```
+ ```sh
+ git clone https://github.com/jeanmamelo/zenvia-jokenpo-challenge.git
+ ```
 
 - Open the project folder:
 
- ```cd zenvia-jokenpo-challenge```
+ ```sh
+ cd zenvia-jokenpo-challenge
+ ```
 
 - Go to src/main:
 
-```cd src/main```
+```sh
+cd src/main
+```
 
 - Now compile the java files:
 
- ```javac -d . Jokenpo.java Player.java```
+ ```sh
+ javac -d . Jokenpo.java Player.java
+ ```
 
 - Then run the project:
 
- ```java main/Jokenpo```
+ ```sh
+ java main/Jokenpo
+ ```
 
 ### Follow the instructions to get a copy of the project up and running using IntelliJ IDE.
 
